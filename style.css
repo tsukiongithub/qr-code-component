@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+
+	font-family: Outfit, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: var(--dark-blue);
+	background-color: var(--light-gray);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	line-height: 1.25;
+}
+
+#app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
+}
+
+.qr-card {
+	max-width: 320px;
+
+	padding: 1rem;
+	border-radius: 1.5rem;
+
+	background-color: var(--white);
+}
+
+.qr-card__code {
+	border-radius: 1rem;
+}
+
+.qr-card__text-content {
+	padding-inline: 1rem;
+	padding-block: 1.5rem;
+
+	text-align: center;
+}
+
+.qr-card__title {
+	margin-bottom: 1rem;
+}
+
+.qr-card__description {
+	color: var(--grayish-blue);
+}
